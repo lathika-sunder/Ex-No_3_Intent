@@ -90,9 +90,33 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ~~~
+## Secondactivity.java:
+~~~
+package com.firstapp.ex03;
+import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.Toast;
+
+import android.os.Bundle;
+
+
+public class activity_second extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second);
+        Toast.makeText(getApplicationContext(), "We are moved to second Activity",Toast.LENGTH_LONG).show();
+    }
+}
+
+~~~
 
 ## activity_main.xml:
-
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -135,9 +159,9 @@ public class MainActivity extends AppCompatActivity {
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
-
-
+~~~
 ## Secondactivity.xml:
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
@@ -156,15 +180,18 @@ tools:context="com.example.android.intents.SecondActivity">
     android:layout_centerVertical="true"
     android:layout_centerHorizontal="true" />
 </RelativeLayout>
+~~~
 
-## Dimens.xml
+## Dimens.xml:
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="activity_vertical_margin">8dp</dimen>
     <dimen name="activity_horizontal_margin">8dp</dimen>
 </resources>
-## Androidmanifest.xml
-
+~~~
+## Androidmanifest.xml:
+~~~
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
@@ -195,6 +222,7 @@ tools:context="com.example.android.intents.SecondActivity">
     </application>
 
 </manifest>
+~~~
 
 ## Output:
 ![234869303-6b4cddde-60de-4eb4-a4d8-56eb3cdd90ab](https://github.com/AavulaTharun/Ex-No_3_Intent/assets/93427201/41a9595b-401c-4b6a-a7c4-b8c6bf0e2d37)
