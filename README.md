@@ -40,6 +40,7 @@ RegisterNumber: 212221240003
 ```
 
 ## MainActivity.java:
+~~~
 package com.firstapp.ex03;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -88,11 +89,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
-
-
-
-
-
+~~~
 
 ## activity_main.xml:
 
